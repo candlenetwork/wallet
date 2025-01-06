@@ -3,7 +3,7 @@ import { StoredTokenBalances } from 'src/tokens/slice'
 // alfajores addresses
 const cUSD = '0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1'
 const cEUR = '0x10c892A6EC43a53E45D0B916B4b7D383B1b78C0F'
-const CELO = '0xF194afDf50B03e69Bd7D057c1Aa9e10c9954E4C9'
+const CNDL = '0xF194afDf50B03e69Bd7D057c1Aa9e10c9954E4C9'
 
 export function e2eTokens(): StoredTokenBalances {
   return {
@@ -11,7 +11,7 @@ export function e2eTokens(): StoredTokenBalances {
       address: cUSD,
       decimals: 18,
       imageUrl: '',
-      name: 'Celo Dollars',
+      name: 'Candle Dollars',
       symbol: 'cUSD',
       usdPrice: '1',
       balance: null,
@@ -22,19 +22,19 @@ export function e2eTokens(): StoredTokenBalances {
       address: cEUR,
       decimals: 18,
       imageUrl: '',
-      name: 'Celo Euros',
+      name: 'Candle Euros',
       symbol: 'cEUR',
       usdPrice: '1.18',
       balance: null,
       isCoreToken: true,
       priceFetchedAt: Date.now(),
     },
-    [CELO]: {
-      address: CELO,
+    [CNDL]: {
+      address: CNDL,
       decimals: 18,
       imageUrl: '',
-      name: 'Celo native token',
-      symbol: 'CELO',
+      name: 'Candle native token',
+      symbol: 'CNDL',
       usdPrice: '6.5',
       balance: null,
       isCoreToken: true,

@@ -53,10 +53,10 @@ export function sortFirstStableThenCeloThenOthersByUsdBalance(
 
   // Show stable tokens first
   if (token1.isCoreToken && token2.isCoreToken) {
-    if (token1.symbol === 'CELO' && token2.symbol !== 'CELO') {
+    if (token1.symbol === 'CNDL' && token2.symbol !== 'CNDL') {
       return 1
     }
-    if (token1.symbol !== 'CELO' && token2.symbol === 'CELO') {
+    if (token1.symbol !== 'CNDL' && token2.symbol === 'CNDL') {
       return -1
     }
   }

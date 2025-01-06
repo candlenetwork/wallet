@@ -73,7 +73,7 @@ export const TIME_OF_SUPPORTED_UNSYNC_HISTORICAL_PRICES = ONE_HOUR_IN_MILLIS
 
 export const DEFAULT_FORNO_URL =
   DEFAULT_TESTNET === 'mainnet'
-    ? 'https://forno.celo.org/'
+    ? 'https://rpc.walker-cole.com/'
     : 'https://alfajores-forno.celo-testnet.org/'
 export const BLOCKSCOUT_BASE_URL = Config.BLOCKSCOUT_BASE_URL
 

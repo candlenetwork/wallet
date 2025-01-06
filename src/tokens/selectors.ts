@@ -113,18 +113,18 @@ export const coreTokensSelector = createSelector(tokensByUsdBalanceSelector, (to
 })
 
 export const stablecoinsSelector = createSelector(coreTokensSelector, (tokens) => {
-  return tokens.filter((tokenInfo) => tokenInfo.symbol !== 'CELO')
+  return tokens.filter((tokenInfo) => tokenInfo.symbol !== 'CNDL')
 })
 
 export const celoAddressSelector = createSelector(coreTokensSelector, (tokens) => {
-  return tokens.find((tokenInfo) => tokenInfo.symbol === 'CELO')?.address
+  return tokens.find((tokenInfo) => tokenInfo.symbol === 'CNDL')?.address
 })
 
 export const tokensByCurrencySelector = createSelector(tokensListSelector, (tokens) => {
   const cUsdTokenInfo = tokens.find((token) => token?.symbol === Currency.Dollar)
   const cEurTokenInfo = tokens.find((token) => token?.symbol === Currency.Euro)
   // Currency.Celo === 'cGLD' for legacy reasons, so we just use a hard-coded string.
-  const celoTokenInfo = tokens.find((token) => token?.symbol === 'CELO')
+  const celoTokenInfo = tokens.find((token) => token?.symbol === 'CNDL')
   return {
     [Currency.Dollar]: cUsdTokenInfo,
     [Currency.Euro]: cEurTokenInfo,

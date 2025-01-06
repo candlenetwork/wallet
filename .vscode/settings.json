@@ -14,30 +14,30 @@
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "editor.codeActionsOnSave": {
-    "source.organizeImports": false
+    "source.organizeImports": "never"
   },
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": false
+      "source.organizeImports": "never"
     }
   },
   "[javascriptreact]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "[typescript]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "[typescriptreact]": {
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "javascript.format.enable": false,
